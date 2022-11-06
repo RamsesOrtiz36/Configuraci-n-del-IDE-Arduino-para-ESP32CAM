@@ -21,3 +21,15 @@ Una vez realizada la configuración del Board’s Manager en el IDE de Arduino, 
         python3 get.py
         
         sudo ln -s /usr/bin/python3 /usr/bin/python
+
+## Prueba de funcionamiento de camara ESP32CAM
+Para demostrar la carga de un programa en el ESP32CAM, se realizará la carga del ejemplo Camera Web Server, el cual es un programa que configura el ESP32CAM como una Cámara IP. Las cámaras IP son servidores que emiten el video capturado por su cámara, el cual puede ser recopilado por otros softwares o ser consultados desde Internet o cualquier dispositivo en la red local.
+
+Para comenzar, abre el ejemplo “CameraWebServer”, el cual puedes encontrar en: File, Examples, Esp32, Camera, CameraWebServer. Deberás seleccionar la cámara AI_THINKER comentando la cámara que esté activada y descomentando la cámara deseada. Deberás también colocar el nombre de red y su contraseña en las variables correspondientes
+
+El siguiente paso es configurar la selección de tarjeta y sus características, las cuales deben ser las siguientes:
+
+Board: AI-Thinker.
+CPU Frequency: 240 MHz.
+Flash Frequency: 80 MHz.
+Flash Mode: QIO.
